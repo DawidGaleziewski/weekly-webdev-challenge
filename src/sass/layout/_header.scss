@@ -1,0 +1,42 @@
+.header {
+  text-align: center;
+}
+
+.logo {
+  margin-top: 2rem;
+  display: inline-block;
+
+  &__icon {
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    vertical-align: middle;
+
+    img {
+      opacity: 0.5;
+    }
+  }
+
+  &__icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 1px 2px 2px rgba(2, 3, 3, 0.42);
+    border-radius: 50%;
+  }
+
+  //   rgba(2, 3, 3, 0.42)
+
+  &__company-name {
+    display: inline-block;
+    margin-left: 26px;
+    vertical-align: middle;
+
+    img {
+      opacity: 0.5;
+    }
+  }
+}
