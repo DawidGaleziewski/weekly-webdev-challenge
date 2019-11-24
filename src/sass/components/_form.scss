@@ -5,19 +5,39 @@
   padding: $form-padding-top $form-padding-horizontal $form-padding-bottom
     $form-padding-horizontal;
   border-radius: $form-border-radius;
-  //   input,
-  //   textarea,
-  //   label {
-  //     display: block;
-  //   }
 
   .float-container {
     position: relative;
     margin-bottom: $input-margin;
 
+    .input-icon {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 16px;
+      transform: translateY(-50%);
+      width: 23px;
+      pointer-events: none;
+      text-align: center;
+      img {
+        vertical-align: middle;
+      }
+    }
+
+    .input-icon:before {
+      content: '';
+      position: absolute;
+      background-color: $form-font-color;
+      width: 1px;
+      height: 29px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -19px;
+    }
     .input-primary {
       background-color: $form-bg-color;
       padding: $input-padding;
+      padding-left: $icon-width + 21px;
       border: $input-border;
       border-radius: $form-border-radius;
       font-size: 16px;
@@ -26,10 +46,44 @@
     }
 
     .float-label {
+      pointer-events: none;
       top: 50%;
-      left: $form-padding-horizontal;
+      left: $icon-width + $input-margin;
       transform: translateY(-50%);
       position: absolute;
+      background-color: $form-bg-color;
     }
+
+    .input-primary:focus + .float-label,
+    .input-primary:valid + .float-label {
+      transform: scale(0.8) translateY(-37px) translateY(20%);
+      padding: 0 3px;
+    }
+
+    .input-select {
+      padding-top: 0;
+      padding-bottom: 0;
+      color: $form-font-color;
+
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 1px;
+      text-overflow: '';
+    }
+  }
+
+  .float-container--select:after {
+    pointer-events: none;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    position: absolute;
+    width: 17px;
+    height: 10px;
+    background-image: url('./assets/Shape_11.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }

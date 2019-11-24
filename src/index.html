@@ -24,40 +24,74 @@
         <h2 class="subsection-title">Register Form</h2>
         <form class="form-primary" action="">
           <div class="float-container">
+            <span class="input-icon">
+              <img src="./assets/glyphicons_003_user.png" alt="user icon" />
+            </span>
+            <input
+              id="register-username"
+              class="input-primary"
+              type="text"
+              required
+            />
             <label class="float-label" for="register-username">
               Username
             </label>
-            <input id="register-username" class="input-primary" type="text" />
           </div>
           <div class="float-container">
-            <label class="float-label" for="register-password">
-              Password
-            </label>
+            <span class="input-icon">
+              <img src="./assets/glyphicons_203_lock.png" alt="user icon" />
+            </span>
             <input
               id="register-password"
               class="input-primary"
               type="password"
+              required
             />
+            <label class="float-label" for="register-password">
+              Password
+            </label>
           </div>
           <div class="float-container">
-            <label class="float-label" for="register-password-confirm">
-              Confirm Password
-            </label>
+            <span class="input-icon">
+              <img src="./assets/glyphicons_203_lock.png" alt="user icon" />
+            </span>
             <input
               id="register-password-confirm"
               class="input-primary"
               type="password"
+              required
             />
-          </div>
-          <div class="float-container">
-            <label class="float-label" for="register-email">Email</label>
-            <input id="register-email" class="input-primary" type="email" />
-          </div>
-          <div class="float-container">
-            <label class="float-label" for="register-location">
-              Your Location
+            <label class="float-label" for="register-password-confirm">
+              Confirm Password
             </label>
-            <select name="" id="register-location" class="input-primary">
+          </div>
+          <div class="float-container">
+            <span class="input-icon">
+              <img src="./assets/glyphicons_010_envelope.png" alt="user icon" />
+            </span>
+            <input
+              id="register-email"
+              class="input-primary"
+              type="email"
+              required
+            />
+            <label class="float-label" for="register-email">Email</label>
+          </div>
+          <div class="float-container float-container--select">
+            <span class="input-icon">
+              <img
+                src="./assets/glyphicons_242_google_maps.png"
+                alt="user icon"
+              />
+            </span>
+            <select
+              name=""
+              id="register-location"
+              class="input-primary input-select"
+            >
+              <option value="" selected disabled hidden invalid
+                >Your Location</option
+              >
               <option value="poland">Poland</option>
               <option value="usa">USA</option>
               <option value="uk">UK</option>
