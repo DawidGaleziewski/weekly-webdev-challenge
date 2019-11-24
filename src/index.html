@@ -19,6 +19,61 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <section class="register-form">
+        <h2 class="subsection-title">Register Form</h2>
+        <form class="form-primary" action="">
+          <div class="float-container">
+            <label class="float-label" for="register-username">
+              Username
+            </label>
+            <input id="register-username" class="input-primary" type="text" />
+          </div>
+          <div class="float-container">
+            <label class="float-label" for="register-password">
+              Password
+            </label>
+            <input
+              id="register-password"
+              class="input-primary"
+              type="password"
+            />
+          </div>
+          <div class="float-container">
+            <label class="float-label" for="register-password-confirm">
+              Confirm Password
+            </label>
+            <input
+              id="register-password-confirm"
+              class="input-primary"
+              type="password"
+            />
+          </div>
+          <div class="float-container">
+            <label class="float-label" for="register-email">Email</label>
+            <input id="register-email" class="input-primary" type="email" />
+          </div>
+          <div class="float-container">
+            <label class="float-label" for="register-location">
+              Your Location
+            </label>
+            <select name="" id="register-location" class="input-primary">
+              <option value="poland">Poland</option>
+              <option value="usa">USA</option>
+              <option value="uk">UK</option>
+            </select>
+          </div>
+
+          <div class="float-container">
+            <input id="register-terms" type="checkbox" />
+            <label for="register-terms"
+              >I have read and accept the terms of use.</label
+            >
+          </div>
+
+          <input type="submit" value="Sign up" />
+        </form>
+      </section>
+    </main>
   </body>
 </html>

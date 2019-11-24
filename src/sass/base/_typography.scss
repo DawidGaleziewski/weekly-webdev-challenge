@@ -1,18 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
 // Background static image
 body {
+  font-family: 'Titillium Web', sans-serif;
   position: relative;
   min-height: 100vh;
   background: url('./assets/Hot_vs_Cold_2560x1440.png') center/cover no-repeat;
 }
 
 // Background mask
-body::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('./assets/Hot_vs_Cold_2560x1440_copy.png') center/cover
-    no-repeat;
-}
+// ! doubt?
+// body::after {
+//   pointer-events: none;
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: url('./assets/Hot_vs_Cold_2560x1440_copy.png') center/cover
+//     no-repeat;
+// }

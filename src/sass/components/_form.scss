@@ -1,0 +1,35 @@
+.form-primary {
+  color: $form-font-color;
+  background-color: $form-bg-color;
+  display: inline-block;
+  padding: $form-padding-top $form-padding-horizontal $form-padding-bottom
+    $form-padding-horizontal;
+  border-radius: $form-border-radius;
+  //   input,
+  //   textarea,
+  //   label {
+  //     display: block;
+  //   }
+
+  .float-container {
+    position: relative;
+    margin-bottom: $input-margin;
+
+    .input-primary {
+      background-color: $form-bg-color;
+      padding: $input-padding;
+      border: $input-border;
+      border-radius: $form-border-radius;
+      font-size: 16px;
+      width: 338px;
+      height: 39px;
+    }
+
+    .float-label {
+      top: 50%;
+      left: $form-padding-horizontal;
+      transform: translateY(-50%);
+      position: absolute;
+    }
+  }
+}
