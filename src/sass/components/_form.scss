@@ -1,4 +1,5 @@
 .form-primary {
+  position: relative;
   color: $form-font-color;
   background-color: $form-bg-color;
   display: inline-block;
@@ -41,8 +42,9 @@
       border: $input-border;
       border-radius: $form-border-radius;
       font-size: 16px;
-      width: 338px;
-      height: 39px;
+      width: $input-field-width;
+      height: $input-field-height;
+      background-image: linear-gradient(to top, #f0f0f0 0%, #f7f7f7 100%);
     }
 
     .float-label {
@@ -51,13 +53,14 @@
       left: $icon-width + $input-margin;
       transform: translateY(-50%);
       position: absolute;
-      background-color: $form-bg-color;
+      transition: all 0.3s ease-out;
     }
 
     .input-primary:focus + .float-label,
     .input-primary:valid + .float-label {
       transform: scale(0.8) translateY(-37px) translateY(20%);
       padding: 0 3px;
+      background-color: $form-bg-color;
     }
 
     .input-select {
@@ -86,4 +89,17 @@
     background-size: cover;
     background-position: center;
   }
+}
+
+.form-primary:after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: -20px;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  background-color: #000;
+  opacity: 0.23;
+  border-radius: $form-border-radius;
 }
