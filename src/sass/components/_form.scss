@@ -8,6 +8,7 @@
   border-radius: $form-border-radius;
 
   .float-container {
+    // display: inline-block;
     position: relative;
     margin-bottom: $input-margin;
 
@@ -73,6 +74,24 @@
       text-indent: 1px;
       text-overflow: '';
     }
+
+    .textarea-primary {
+      height: 230px;
+      padding: 15px;
+      resize: none;
+    }
+    .textarea-primary::placeholder {
+      color: $form-font-color;
+      font-size: 16px;
+      font-family: inherit;
+    }
+  }
+
+  .float-container--half {
+    margin-bottom: 0;
+    margin-right: 52px;
+    vertical-align: middle;
+    display: inline-block;
   }
 
   .float-container--select:after {
@@ -97,6 +116,10 @@
     appearance: none;
     border: $input-border;
     border-radius: $form-border-radius;
+    vertical-align: middle;
+  }
+
+  .checkbox-primary-label {
     vertical-align: middle;
   }
 

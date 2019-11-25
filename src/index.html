@@ -20,6 +20,7 @@
     </header>
 
     <main>
+      <!-- # 1. Register form -->
       <section class="register-form section-default">
         <h2 class="section-header">Register Form</h2>
         <form class="form-primary" action="">
@@ -109,10 +110,116 @@
               >I have read and accept the terms of use.</label
             >
           </div>
-
           <input class="btn-submit" type="submit" value="Sign up" />
         </form>
       </section>
+      <!-- # 1. Register form / end-->
+
+      <!-- # 2. Sign in form -->
+      <section class="register-form section-default">
+        <h2 class="section-header">Sign in</h2>
+        <form class="form-primary" action="">
+          <div class="float-container">
+            <span class="input-icon">
+              <img src="./assets/glyphicons_003_user.png" alt="user icon" />
+            </span>
+            <input
+              id="signin-username"
+              class="input-primary"
+              type="text"
+              required
+            />
+            <label class="float-label" for="signin-username">
+              Username
+            </label>
+          </div>
+          <div class="float-container">
+            <span class="input-icon">
+              <img src="./assets/glyphicons_203_lock.png" alt="user icon" />
+            </span>
+            <input
+              id="signin-password"
+              class="input-primary"
+              type="password"
+              required
+            />
+            <label class="float-label" for="signin-password">
+              Password
+            </label>
+          </div>
+          <div class="float-container float-container--half">
+            <input
+              class="checkbox-primary"
+              id="signin-terms"
+              type="checkbox"
+              value="terms-confirmation"
+            />
+            <label class="checkbox-primary-label" for="signin-terms"
+              >Remember me</label
+            >
+          </div>
+          <input class="btn-submit--secondary" type="submit" value="Sign in" />
+        </form>
+      </section>
+      <!-- # 2. Sign in form / end-->
+
+      <!-- # 3. Send email form -->
+      <section class="register-form section-default">
+        <h2 class="section-header">Send Email</h2>
+        <form class="form-primary" action="">
+          <div class="float-container">
+            <span class="input-icon">
+              <img src="./assets/glyphicons_003_user.png" alt="user icon" />
+            </span>
+            <input
+              id="send-email-username"
+              class="input-primary"
+              type="text"
+              required
+            />
+            <label class="float-label" for="send-email-username">
+              Your Name
+            </label>
+          </div>
+          <div class="float-container">
+            <span class="input-icon">
+              <img
+                src="./assets/glyphicons_010_envelope.png"
+                alt="email icon"
+              />
+            </span>
+            <input
+              id="send-email-email-addr"
+              class="input-primary"
+              type="password"
+              required
+            />
+            <label class="float-label" for="send-email-email-addr">
+              Your Email
+            </label>
+          </div>
+          <div class="float-container">
+            <textarea
+              class="input-primary textarea-primary"
+              name="msg"
+              placeholder="Type your message ..."
+            ></textarea>
+          </div>
+          <div class="float-container">
+            <input
+              class="checkbox-primary"
+              id="send-email-terms"
+              type="checkbox"
+              value="terms-confirmation"
+            />
+            <label class="checkbox-primary-label" for="send-email-terms"
+              >Send a copy to my email</label
+            >
+          </div>
+          <input class="btn-submit" type="submit" value="Send Email" />
+        </form>
+      </section>
+      <!-- # 3. Send email end -->
     </main>
   </body>
 </html>
