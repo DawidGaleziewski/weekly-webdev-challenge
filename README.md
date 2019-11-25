@@ -58,5 +58,5 @@ Deployment is done from branch gh-pages
 Deployment url:
 http://username.github.io/REPONAME
 
-Example:
-https://dawidgaleziewski.github.io/webpack-starter/
+Current live preview:
+https://dawidgaleziewski.github.io/weekly-webdev-challenge
