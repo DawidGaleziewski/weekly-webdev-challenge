@@ -4,23 +4,312 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Upcase</title>
-    <link href="./bundle.9953eeec694d33dd60b0.css" rel="stylesheet" />
-  </head>
-
+    <link rel="ICON" type="image/ico" href="./assets/site_logo.png" />
+    <title>Weekly WebDev Challenge</title>
+  <link href="./bundle.97528984ff3cf450e345.css" rel="stylesheet"></head>
   <body>
-    <!-- Outline -->
-    <!-- # 1 Navigation -->
-    <header>
-      <!-- # 1 Navigation -->
+    <header class="header">
+      <div class="logo">
+        <div class="logo__icon">
+          <img src="./assets/header__logo.png" alt="logo icon" />
+        </div>
 
-      <!-- # 1 Navigation /END-->
+        <div class="logo__company-name">
+          <img src="./assets/header__company-name.png" alt="company name" />
+        </div>
+      </div>
     </header>
 
-    <main></main>
-    <script
-      type="text/javascript"
-      src="./bundle.9953eeec694d33dd60b0.js"
-    ></script>
-  </body>
+    <main class="main-container">
+      <!-- # 1. Register form -->
+      <section class="register-form section-default">
+        <h2 class="section-header">Register Form</h2>
+        <form class="form-primary" action="">
+          <div class="float-container">
+            <span class="input-icon">
+              <img src="./assets/glyphicons_003_user.png" alt="user icon" />
+            </span>
+            <input
+              id="register-username"
+              class="input-primary"
+              type="text"
+              required
+            />
+            <label class="float-label" for="register-username">
+              Username
+            </label>
+          </div>
+          <div class="float-container">
+            <span class="input-icon">
+              <img src="./assets/glyphicons_203_lock.png" alt="user icon" />
+            </span>
+            <input
+              id="register-password"
+              class="input-primary"
+              type="password"
+              required
+            />
+            <label class="float-label" for="register-password">
+              Password
+            </label>
+          </div>
+          <div class="float-container">
+            <span class="input-icon">
+              <img src="./assets/glyphicons_203_lock.png" alt="user icon" />
+            </span>
+            <input
+              id="register-password-confirm"
+              class="input-primary"
+              type="password"
+              required
+            />
+            <label class="float-label" for="register-password-confirm">
+              Confirm Password
+            </label>
+          </div>
+          <div class="float-container">
+            <span class="input-icon">
+              <img src="./assets/glyphicons_010_envelope.png" alt="user icon" />
+            </span>
+            <input
+              id="register-email"
+              class="input-primary"
+              type="email"
+              required
+            />
+            <label class="float-label" for="register-email">Email</label>
+          </div>
+          <div class="float-container float-container--select">
+            <span class="input-icon">
+              <img
+                src="./assets/glyphicons_242_google_maps.png"
+                alt="user icon"
+              />
+            </span>
+            <select
+              name=""
+              id="register-location"
+              class="input-primary input-select"
+            >
+              <option value="" selected disabled hidden invalid
+                >Your Location</option
+              >
+              <option value="poland">Poland</option>
+              <option value="usa">USA</option>
+              <option value="uk">UK</option>
+            </select>
+          </div>
+
+          <div class="float-container">
+            <input
+              class="checkbox-primary"
+              id="register-terms"
+              type="checkbox"
+              value="terms-confirmation"
+            />
+            <label class="checkbox-primary-label" for="register-terms"
+              >I have read and accept the terms of use.</label
+            >
+          </div>
+          <input class="btn-submit" type="submit" value="Sign up" />
+        </form>
+      </section>
+      <!-- # 1. Register form /END-->
+
+      <!-- # 2. Sign in form -->
+      <section class="signin-form section-default">
+        <h2 class="section-header">Sign in</h2>
+        <form class="form-primary" action="">
+          <div class="float-container">
+            <span class="input-icon">
+              <img src="./assets/glyphicons_003_user.png" alt="user icon" />
+            </span>
+            <input
+              id="signin-username"
+              class="input-primary"
+              type="text"
+              required
+            />
+            <label class="float-label" for="signin-username">
+              Username
+            </label>
+          </div>
+          <div class="float-container">
+            <span class="input-icon">
+              <img src="./assets/glyphicons_203_lock.png" alt="user icon" />
+            </span>
+            <input
+              id="signin-password"
+              class="input-primary"
+              type="password"
+              required
+            />
+            <label class="float-label" for="signin-password">
+              Password
+            </label>
+          </div>
+          <div class="float-container float-container--half">
+            <input
+              class="checkbox-primary"
+              id="signin-terms"
+              type="checkbox"
+              value="terms-confirmation"
+            />
+            <label class="checkbox-primary-label" for="signin-terms"
+              >Remember me</label
+            >
+          </div>
+          <input class="btn-submit--secondary" type="submit" value="Sign in" />
+        </form>
+      </section>
+      <!-- # 2. Sign in form /END-->
+
+      <!-- # 3. Send email form -->
+      <section class="send-email-form section-default">
+        <h2 class="section-header">Send Email</h2>
+        <form class="form-primary" action="">
+          <div class="float-container">
+            <span class="input-icon">
+              <img src="./assets/glyphicons_003_user.png" alt="user icon" />
+            </span>
+            <input
+              id="send-email-username"
+              class="input-primary"
+              type="text"
+              required
+            />
+            <label class="float-label" for="send-email-username">
+              Your Name
+            </label>
+          </div>
+          <div class="float-container">
+            <span class="input-icon">
+              <img
+                src="./assets/glyphicons_010_envelope.png"
+                alt="email icon"
+              />
+            </span>
+            <input
+              id="send-email-email-addr"
+              class="input-primary"
+              type="password"
+              required
+            />
+            <label class="float-label" for="send-email-email-addr">
+              Your Email
+            </label>
+          </div>
+          <div class="float-container">
+            <textarea
+              class="input-primary textarea-primary"
+              name="msg"
+              placeholder="Type your message ..."
+            ></textarea>
+          </div>
+          <div class="float-container">
+            <input
+              class="checkbox-primary"
+              id="send-email-terms"
+              type="checkbox"
+              value="terms-confirmation"
+            />
+            <label class="checkbox-primary-label" for="send-email-terms"
+              >Send a copy to my email</label
+            >
+          </div>
+          <input class="btn-submit" type="submit" value="Send Email" />
+        </form>
+      </section>
+      <!-- # 3. Send email /END -->
+
+      <!-- # 4. Recover form -->
+      <section class="recover-form section-default">
+        <h2 class="section-header">Recover Form</h2>
+        <form class="form-primary" action="">
+          <div class="float-container">
+            <span class="input-icon">
+              <img src="./assets/glyphicons_010_envelope.png" alt="user icon" />
+            </span>
+            <input
+              id="recover-username"
+              class="input-primary"
+              type="text"
+              required
+            />
+            <label class="float-label" for="recover-email">
+              Enter your Email
+            </label>
+          </div>
+          <div class="float-container">
+            <span class="input-icon">
+              <img src="./assets/glyphicons_139_phone.png" alt="user icon" />
+            </span>
+            <input
+              id="recover-phone"
+              class="input-primary"
+              type="number"
+              required
+            />
+            <label class="float-label" for="recover-phone">
+              Enter your Phone number
+            </label>
+          </div>
+
+          <input class="btn-submit--secondary" type="submit" value="Send" />
+          <input
+            class="btn-submit--secondary align-right btn--disabled"
+            type="submit"
+            value="Done"
+            disabled
+          />
+        </form>
+      </section>
+      <!-- # 4. Recover form /END-->
+
+      <!-- # 5. Subscribe form -->
+      <section class="subscribe-form section-default">
+        <h2 class="section-header">Subscribe Form</h2>
+        <form class="form-primary" action="">
+          <div class="float-container">
+            <span class="input-icon">
+              <img src="./assets/glyphicons_010_envelope.png" alt="user icon" />
+            </span>
+            <input
+              id="subscribe-email"
+              class="input-primary"
+              type="text"
+              required
+            />
+            <label class="float-label" for="subscribe-email">
+              Enter your Email
+            </label>
+          </div>
+
+          <input
+            class="btn-submit--secondary"
+            type="submit"
+            value="Subscribe"
+          />
+          <input
+            class="btn-submit--secondary align-right btn--decline"
+            type="submit"
+            value="No, Thanks"
+          />
+        </form>
+      </section>
+      <!-- # 5. Subscribe form /END-->
+
+      <!--  -->
+
+      <section class="logo-bottom section-default">
+        <div class="logo__icon">
+          <img src="./assets/header__logo.png" alt="logo icon" />
+        </div>
+
+        <div class="logo__company-name">
+          <img src="./assets/header__company-name.png" alt="company name" />
+        </div>
+      </section>
+    </main>
+  <script type="text/javascript" src="./bundle.97528984ff3cf450e345.js"></script></body>
 </html>
