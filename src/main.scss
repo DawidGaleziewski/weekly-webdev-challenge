@@ -3,7 +3,7 @@
 @import './sass/base/typography';
 
 // - vendors/
-@import './sass/vendors/bootstrap';
+// @import './sass/vendors/bootstrap';
 
 // - utils/
 @import './sass/utils/variables';
@@ -16,3 +16,4 @@
 // - layouts/
 @import './sass/layout/header';
 @import './sass/layout/section';
+@import './sass/layout/logo_bottom';

@@ -1,9 +1,5 @@
 .section-default {
-  // display: inline-block;
-  // vertical-align: top;
-  // margin-top: 69px;
-  // margin-left: 87px;
-
+  margin-top: 51px;
   .section-header {
     color: #fff;
     text-shadow: 1px 2px 2px rgba(43, 1, 0, 0.75);
@@ -11,6 +7,14 @@
     margin-bottom: 38px;
     font-size: 32px;
     font-weight: 400;
-    text-align: left;
+  }
+}
+
+@media (min-width: 1000px) {
+  .section-default {
+    margin-top: 0;
+    .section-header {
+      text-align: left;
+    }
   }
 }
