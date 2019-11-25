@@ -1,0 +1,41 @@
+.main-container {
+  display: grid;
+  grid-template-columns: [first] 66px [col1-start] auto [col1-end col2-start] auto [col2-end] 66px;
+
+  grid-template-rows: [first row1-start] 79.5px [row1-end row2-start] 79.5px [row2-end row3-start] 79.5px [row3-end row4-start] 79.5px [row4-end row5-start] 79.5px [row5-end row6-start] 79.5px [row6-end]79.5px[row7-start] 79.5px [row7-end row8-start] 79.5px [row8-end row9-start] 79.5px [row9-end row10-start] 79.5px[row10-end row11-start] 79.5px [row11-end row12-start] 79.5px [row12-end last];
+}
+
+.register-form {
+  grid-column-start: col1-start;
+  grid-column-end: col1-end;
+  grid-row-start: row1-start;
+  grid-row-end: row6-end;
+}
+
+.send-email-form {
+  grid-column-start: col1-start;
+  grid-column-end: col1-end;
+  grid-row-start: row7-start;
+  grid-row-end: row12-end;
+}
+
+.signin-form {
+  grid-column-start: col2-start;
+  grid-column-end: col2-end;
+  grid-row-start: row1-start;
+  grid-row-end: row3-end;
+}
+
+.recover-form {
+  grid-column-start: col2-start;
+  grid-column-end: col2-end;
+  grid-row-start: row5-start;
+  grid-row-end: row6-end;
+}
+
+.subscribe-form {
+  grid-column-start: col2-start;
+  grid-column-end: col2-end;
+  grid-row-start: row8-start;
+  grid-row-end: row9-end;
+}

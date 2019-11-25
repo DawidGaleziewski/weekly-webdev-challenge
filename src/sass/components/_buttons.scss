@@ -23,3 +23,14 @@
   width: 139px;
   height: $input-field-height;
 }
+
+.btn--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn--decline {
+  background-color: #f44a5c;
+  background-image: linear-gradient(to top, #f03848 0%, #f13b4b 100%);
+  border-color: #b6545c;
+}
