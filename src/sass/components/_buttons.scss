@@ -8,22 +8,34 @@
   background-image: linear-gradient(to top, #7fc41f 0%, #a1d73e 100%);
   border: $form-border-accept;
   border-radius: $form-border-radius;
-  width: $input-field-width;
+
   height: $input-field-height;
+
+  width: 250px;
+  @media (min-width: 600px) {
+    width: $input-field-width;
+  }
 }
 
 .btn-submit--secondary {
   cursor: pointer;
   vertical-align: middle;
-  display: inline-block;
+  display: block;
   font-size: 24px;
   color: white;
   background-color: $form-bg-color-accept;
   background-image: linear-gradient(to top, #7fc41f 0%, #a1d73e 100%);
   border: $form-border-accept;
   border-radius: $form-border-radius;
-  width: 139px;
+  width: 250px;
   height: $input-field-height;
+  margin-top: $input-margin;
+
+  @media (min-width: 600px) {
+    width: 139px;
+    display: inline-block;
+    margin-top: 0;
+  }
 }
 
 .btn--disabled {
@@ -35,4 +47,11 @@
   background-color: #f44a5c;
   background-image: linear-gradient(to top, #f03848 0%, #f13b4b 100%);
   border-color: #b6545c;
+}
+
+@media (min-width: 600px) {
+  .align-right {
+    width: 149;
+    margin-left: 56px;
+  }
 }

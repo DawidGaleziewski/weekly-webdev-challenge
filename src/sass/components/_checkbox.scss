@@ -1,0 +1,25 @@
+.checkbox-primary {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  appearance: none;
+  border: $input-border;
+  border-radius: $form-border-radius;
+  vertical-align: middle;
+}
+
+.checkbox-primary-label {
+  vertical-align: middle;
+}
+
+.checkbox-primary:checked + .checkbox-primary-label:after {
+  position: absolute;
+  content: '';
+  width: 14px;
+  height: 14px;
+  background-color: #88c814;
+  background-image: linear-gradient(to top, #75bb0f 0%, #94ce21 100%);
+  top: 5px;
+  left: 5px;
+  border-radius: $form-border-radius;
+}
